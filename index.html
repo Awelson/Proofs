@@ -123,6 +123,32 @@ via `H`, this translates to
 - `d (f x n) (f a) < δ, for n≥N`
 
 Thus our goal is proved. `$\Box$`
+</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Step 1 (reverse direction)
+
+<img src="Pasted image 20240618223158.png" alt="" style="object-fit: scale-down">
+
+
+suppose f is not continuous at a
+</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Step 2
+
+<img src="Pasted image 20240618223717.png" alt="" style="object-fit: scale-down">
+
+
+Taking `δ := n⁻¹` in `con` we have that for every `n` there is a sequence `x` such that 
+
+- `d (x n) a < n⁻¹ ∧ d (f x n) (f a) ≥ ε`
+
+i.e, `x → a` but `f∘x` does not converge to `f a`
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+This is a contradiction, hence we are done. `$\Box$`
 </div></script></section></section></div>
     </div>
 
