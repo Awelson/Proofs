@@ -7,7 +7,7 @@
     <title></title>
     <link rel="stylesheet" href="dist/reveal.css" />
     <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
-    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="plugin/customcontrols/style.css">
 	<link rel="stylesheet" href="plugin/chalkboard/style.css">
@@ -88,17 +88,42 @@
       <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-### Slide 1
+### Proof (Prop 1.2)
 
-Test
+We prove the forward direction first
 
-> - `$p:M$`
-> - t p
+<img src="Pasted image 20240618214457.png" alt="" style="object-fit: scale-down">
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-### Slide 2
-</div></script></section></div>
+### Step 1
+
+intro `$\epsilon$` 
+
+<img src="Pasted image 20240618214910.png" alt="" style="object-fit: scale-down">
+
+
+By `is_cont f a ε` there is a `δ>0` such that 
+
+`d a x < δ ⇒ d (f a) (f x), for any x:X`
+</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Step 2
+
+<img src="Pasted image 20240618220258.png" alt="" style="object-fit: scale-down">
+
+
+Since `x → a` there is an N large enough such that
+- `d (x n) a < δ, for n≥N`
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+via `H`, this translates to
+- `d (f x n) (f a) < δ, for n≥N`
+
+Thus our goal is proved. `$\Box$`
+</div></script></section></section></div>
     </div>
 
     <script src="dist/reveal.js"></script>
